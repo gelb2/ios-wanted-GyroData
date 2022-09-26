@@ -14,9 +14,11 @@ class SecondControlView: UIView, SecondViewStyling {
     var stopButton = UIButton()
     
     // MARK: Properties
+    var viewModel: SecondControlViewModel
     
     // MARK: Init
-    init() {
+    init(viewModel: SecondControlViewModel) {
+        self.viewModel = viewModel
         super.init(frame: .zero)
         initViewHierarchy()
         configureView()
@@ -52,9 +54,20 @@ extension SecondControlView: Presentable {
         stackView.addStyles(style: controlStackViewStyling)
         measureButton.addStyles(style: measureButtonStyling)
         stopButton.addStyles(style: stopButtonStyling)
+        measureButton.addTarget(self, action: #selector(didTapMeasureButton), for: .touchUpInside)
+        stopButton.addTarget(self, action: #selector(didTapStopButton), for: .touchUpInside)
     }
     
     func bind() {
         
+    }
+    
+    // MARK: Actions
+    @objc private func didTapMeasureButton() {
+        viewModel.didTapMeasureButton()
+    }
+    
+    @objc private func didTapStopButton() {
+        viewModel.didTapStopButton()
     }
 }

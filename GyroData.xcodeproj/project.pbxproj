@@ -50,6 +50,8 @@
 		64336DE528DC9DD700D56D68 /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64336DE428DC9DD700D56D68 /* FileManager+Extensions.swift */; };
 		64336DE828DC9DE400D56D68 /* MotionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64336DE728DC9DE400D56D68 /* MotionFile.swift */; };
 		B019E7FD28DBECF5009BC86F /* ThirdControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B019E7FC28DBECF5009BC86F /* ThirdControlView.swift */; };
+		B03F9D2628E1242100E352EC /* CoreMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F9D2528E1242100E352EC /* CoreMotionManager.swift */; };
+		B03F9D2828E1264F00E352EC /* SecondControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F9D2728E1264F00E352EC /* SecondControlViewModel.swift */; };
 		B07C5F7828DAB10D00321A5F /* SecondControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07C5F7728DAB10D00321A5F /* SecondControlView.swift */; };
 		B08BCA3728DD8D8200F6E2A2 /* DummyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08BCA3628DD8D8200F6E2A2 /* DummyGenerator.swift */; };
 		B0CF0F3F28DA9B9B00596BCF /* FirstViewStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CF0F3E28DA9B9B00596BCF /* FirstViewStyling.swift */; };
@@ -102,6 +104,8 @@
 		64336DE428DC9DD700D56D68 /* FileManager+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
 		64336DE728DC9DE400D56D68 /* MotionFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionFile.swift; sourceTree = "<group>"; };
 		B019E7FC28DBECF5009BC86F /* ThirdControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdControlView.swift; sourceTree = "<group>"; };
+		B03F9D2528E1242100E352EC /* CoreMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionManager.swift; sourceTree = "<group>"; };
+		B03F9D2728E1264F00E352EC /* SecondControlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondControlViewModel.swift; sourceTree = "<group>"; };
 		B07C5F7728DAB10D00321A5F /* SecondControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondControlView.swift; sourceTree = "<group>"; };
 		B08BCA3628DD8D8200F6E2A2 /* DummyGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyGenerator.swift; sourceTree = "<group>"; };
 		B0CF0F3E28DA9B9B00596BCF /* FirstViewStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewStyling.swift; sourceTree = "<group>"; };
@@ -250,6 +254,7 @@
 			children = (
 				46E21EB628DC5F1500593210 /* SecondSegmentViewModel.swift */,
 				46E21EB728DC5F1500593210 /* SecondModel.swift */,
+				B03F9D2728E1264F00E352EC /* SecondControlViewModel.swift */,
 			);
 			path = SecondVCRelated;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 			children = (
 				46E21ECA28DC5F2100593210 /* Repository.swift */,
 				46E21EC928DC5F2100593210 /* CoreDataManager.swift */,
+				B03F9D2528E1242100E352EC /* CoreMotionManager.swift */,
 				B08BCA3628DD8D8200F6E2A2 /* DummyGenerator.swift */,
 			);
 			path = Utilities;
@@ -409,6 +415,7 @@
 				36FB64F328D8CA8000A87587 /* SecondViewController.swift in Sources */,
 				462FB33328DB123D00BC5F04 /* ThirdViewControllerRoutable.swift in Sources */,
 				B08BCA3728DD8D8200F6E2A2 /* DummyGenerator.swift in Sources */,
+				B03F9D2628E1242100E352EC /* CoreMotionManager.swift in Sources */,
 				464FE63C28DB3D9D00C73656 /* UIFont+Extensions.swift in Sources */,
 				3695B0BD28D99CA100FF93FD /* SecondViewSegementedControlView.swift in Sources */,
 				36FB64ED28D8C5DC00A87587 /* Routable.swift in Sources */,
@@ -428,6 +435,7 @@
 				36FB64FC28D8CE1D00A87587 /* Presentable.swift in Sources */,
 				46E21ECC28DC5F2100593210 /* Repository.swift in Sources */,
 				64336DE828DC9DE400D56D68 /* MotionFile.swift in Sources */,
+				B03F9D2828E1264F00E352EC /* SecondControlViewModel.swift in Sources */,
 				3695B0C728D9AA0700FF93FD /* SecondViewControllerRoutable.swift in Sources */,
 				46E21EC128DC5F1500593210 /* Motion+CoreDataClass.swift in Sources */,
 				46E21EC628DC5F1500593210 /* FirstModel.swift in Sources */,
@@ -572,6 +580,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GyroData/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -598,6 +607,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GyroData/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
